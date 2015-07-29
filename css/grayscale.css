@@ -7,6 +7,13 @@
 
 
 /*FROM MENU*/
+
+div.bengbeng {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
 .block {
     width: 100%;
     background-color: #f1f0e9;   /*background colour of section*/
@@ -92,7 +99,7 @@
     position: relative;
     width: 100%;
     text-align: center;
-    padding: 22px 20px 25px 20px;
+    padding: 15px 20px 0px 20px;
     position: relative;
     z-index: 3;
     color: #fff;
@@ -105,19 +112,20 @@
 
 
 .triangle {
+    color: black;
     display: block;
     position: absolute;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 13px solid transparent;
     border-right: 13px solid transparent;
     border-top-width: 13px;
     border-top-style: solid;
     border-top-color: inherit;
-    bottom: -13px;
+    /* bottom: -13px; */
     left: 50%;
     margin-left: -13px;
-    z-index: 3;
+    z-index: 4;
 }
 
 
@@ -181,7 +189,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
+    margin: 0 0 15px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
@@ -305,7 +313,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/intro-bg3.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -381,7 +389,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -398,7 +406,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0% {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -453,6 +461,7 @@ a:focus {
 }
 
 .btn {
+    margin-bottom: 15px !important;
     border-radius: 0;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
