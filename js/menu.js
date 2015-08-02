@@ -1,7 +1,6 @@
 var Menu = (function() {
-	
-	var $container = $( '#rm-container' ),						
-		$cover = $container.find( 'div.rm-cover' ),
+	var init_container = function ($container) {
+		var $cover = $container.find( 'div.rm-cover' ),
 		$middle = $container.find( 'div.rm-middle' ),
 		$right = $container.find( 'div.rm-right' ),
 		$open = $cover.find('a.rm-button-open'),
@@ -77,5 +76,11 @@ var Menu = (function() {
 		};
 
 	return { init : init };
+	};
+	return { init: function() {
+		$('.rm-container').each(function() {
+			init_container($(this)).init();
+		})
+	}}
 
 })();
